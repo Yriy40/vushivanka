@@ -1,0 +1,90 @@
+body {
+color: rgba(252, 249, 249, 0.40);
+font-family: 'Manrope', sans-serif;
+background: #1C2225;
+}
+
+a {
+    text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.section {
+    width: 100%;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid red;
+}
+
+.section-title span {
+color: #ECD979;
+}
+/* ===========hero=========== */
+.hero {}
+
+.container {}
+
+.hero-container {}
+
+.hero-title {
+color: #FCF9F9;
+font-size: 44px;
+line-height: 1.22;
+    /* 122.727% */
+    letter-spacing: -0.03em;
+}
+
+.hero-buy-btn {
+display: inline-flex;
+height: 49px;
+padding: 14px 36px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 15px;
+border: 1px solid rgba(252, 249, 249, 0.10);
+
+}
+
