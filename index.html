@@ -13,12 +13,27 @@
 <body>
 <section class="hero">
     <div class="container hero-container">
-    <h1 class="hero-title">Reviving the traditional <span class="section-title span">Ukrainian</span> artistry in every stitch.</h1>
+    <h1 class="hero-title section-title">Reviving the traditional <span>Ukrainian</span> artistry in every stitch.</h1>
 <button class="hero-buy-btn" type="button">Order
     <svg class="hero-btn-icon" width="24" height="24">
     <use href="./images/"></use>
-            </svg></button>
-    </div>
+    </svg></button>
+    <picture>
+        <source
+        srcset="./images/dt-girl-1-1.jpg 1x, ./images/dt-girl-1-2.jpg 2x"
+        media="(min-width: 1280px)"/>
+        <source
+        srcset="./tab-girl-1-1.jpg 1x, ./images/tab-girl-1-2.jpg 2x"
+        media="(min-width: 768px)"/>
+        <source
+        srcset="./images/mob-girl-1-1.jpg 1x, ./images/mob-girl-1-1.jpg 2x"
+        media="(min-width: 375px)"/>
+        <img src="./images/dt-girl-1-1.jpg 1x"
+        alt="girl in greey vyshyvanca"
+        width="413"
+        height="575"
+        class="hero-img">
+        </picture>
 </section>
 <section class="about us">
 </section>
