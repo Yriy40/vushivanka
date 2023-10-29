@@ -102,7 +102,7 @@ margin-bottom: 20px;
     background: #1C2225;
     color: #FCF9F9;
     display: inline-flex;
-    /* display: flex; */
+    display: block;
     width: 169px;
 
     height: 49px;
@@ -149,22 +149,28 @@ display: none;
 @media screen and (min-width: 768px) {
 
 .container {
-max-width: 768px;
-height: 900px;
-padding-left: 32px;
-padding-right: 32px;
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .hero {
-/* padding-top: 106px;
-padding-bottom: 60px; */
+padding-top: 80px;
 }
 
 
 .hero-container {
+padding-top: 26px;
+position: relative;
 align-items: start;
-flex-wrap: wrap;
 }
+
+.hero-title-wrap {
+padding-bottom: 97px;
+width: 100%;
+background-image: url(../images/group-tab-1x.png);background-repeat: no-repeat;background-position: right bottom;
+}
+
 
 .hero-title {
 color: #FCF9F9;
@@ -173,6 +179,7 @@ height: 192px;
 font-size: 54px;
 font-weight: 400;
 line-height: 1.18;
+/* padding-top: 26px; */
 margin-bottom: 40px;
 
 }
@@ -180,6 +187,7 @@ margin-bottom: 40px;
 .hero-buy-btn {
 padding: 14px 39px;
 margin-left: 141px;
+font-size: 16px;
 }
 
 .hero-btn-icon {}
@@ -193,6 +201,8 @@ margin-left: 141px;
     flex-direction: column;
     align-items: center;
     gap: 16px;
+    position: absolute;
+    right: 32px;
     /* padding: 40px 80px; */
 }
 
@@ -209,10 +219,65 @@ margin-left: 141px;
     letter-spacing: -0.04em;
 }
 
+/*.hero-ukr-img {
+ width: 139px;
+height: 197px;
+/* position: absolute;
+background: url(<path-to-image>), rgb(18, 17, 17) -2.282px -3.431px / 105.126% 103.318% no-repeat;
+margin-top: auto;
+} */
 
 }
 
+@media screen and (min-width: 1280px) {
 
+.container {
+max-width: 1280px;
+padding-left: 100px;
+padding-right: 100px;
+    }
+
+.hero {
+padding-top: 100px;
+padding-bottom: 0;
+}
+
+.hero-container {
+max-width: 100%;
+display: flex;
+/* position: relative;
+flex-direction: column; */
+
+}
+
+.hero-one {
+padding-top: 80px;
+} 
+
+.star {
+margin-top: 14px;
+right: 100px;
+}
+
+.hero-title-wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 40px;
+    background-image: url(../images/group-dt-1.png);
+}
+
+.hero-title {
+width: 518px;
+/* padding-top: 26px; */
+    margin-bottom: 40px;
+}
+
+.hero-img {
+margin-top: 0;
+
+}
+}
 
 /*
 .about-us {
