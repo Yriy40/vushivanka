@@ -84,17 +84,7 @@ display: flex;
 flex-direction: column;
 }
 
-.hero-title {
-color: #FCF9F9;
-width: 335px;
-/* height: 216px; */
-font-size: 44px;
-font-weight: 400;
-line-height: 1.22;
-letter-spacing: -0.03em;
-text-align: left;
-margin-bottom: 20px;
-}
+.hero-title {color: #FCF9F9;width: 335px;/* height: 216px; */font-size: 44px;font-weight: 400;line-height: 1.22;letter-spacing: -0.03em;/* text-align: left; */margin-bottom: 20px;}
 
 .hero-buy-btn {
     background: #1C2225;
@@ -117,12 +107,12 @@ margin-bottom: 20px;
     text-transform: uppercase;
     /* margin: 0 auto; */
     margin-left: 70px;
-    transition: border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-buy-btn:hover,
 .hero-buy-btn:focus {
-border-color: 1px solid var(--yellow, #ECD979);
+border: 1px solid var(--yellow, #ECD979);
 } 
 
 .hero-btn-icon {
@@ -249,8 +239,7 @@ align-items: flex-start;
 opacity: 0;
 visibility: visible;
 pointer-events: auto;
-display: none;
-list-style: none;
+
 }
 
 .tab-list {
@@ -456,7 +445,10 @@ display: flex;
 }
 
 .tablet-list {
-list-style: none;
+display: none;
+opacity: 0;
+visibility: visible;
+pointer-events: auto;
 }
 
 .testimonials-item {
@@ -469,7 +461,7 @@ border: 1px solid rgba(252, 249, 249, 0.10);
 .testimonials-img {
     display: block;
     position: absolute;
-    top: -30px;
+    top: -31px;
     width: 80px;
     height: 80px;
    /*overflow: hidden;
