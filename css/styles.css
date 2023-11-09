@@ -60,6 +60,9 @@ img {
 .section-title span {
 color: #ECD979;
 }
+html {
+    scroll-behavior: smooth;
+}
 /* ===========hero=========== */
 @media screen and (min-width: 320px) {
     .container {
@@ -67,16 +70,13 @@ color: #ECD979;
     }
 }
 
-.hero {
-padding-top: 80px;
-padding-bottom: 60px;
-}
+.hero {/* padding-top: 80px; */padding-bottom: 100px;}
 
 
 .hero-container {
 display: flex;
 flex-direction: column; 
-align-items: center;
+
 }
 
 .hero-one {
@@ -137,11 +137,7 @@ transform: rotate(120deg);
 outline: none;
 }
 
-.hero-img {
-border-radius: 4px;
-background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-margin-top: 40px;
-}
+.hero-img {border-radius: 4px;background: url(<path-to-image>), lightgray 50% / cover no-repeat;margin-top: 40px;/* width: 100px; */}
 
 .star {
 display: none;
